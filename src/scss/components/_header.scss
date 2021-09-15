@@ -1,1 +1,235 @@
-//
+.header {
+    position: relative;
+    background-color: rgb(10, 2, 17);
+    height: 927px;
+    z-index: 1000;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: rgb(158, 46, 246);
+        background: -moz-linear-gradient(
+            90deg,
+            rgba(158, 46, 246, 1) 0%,
+            rgba(158, 46, 246, 1) 15%,
+            rgba(158, 46, 246, 1) 60%,
+            rgba(245, 245, 248, 1) 60%,
+            rgba(245, 245, 248, 1) 80%,
+            rgba(158, 46, 246, 1) 80%
+        );
+        background: -webkit-linear-gradient(
+            90deg,
+            rgba(158, 46, 246, 1) 0%,
+            rgba(158, 46, 246, 1) 15%,
+            rgba(158, 46, 246, 1) 60%,
+            rgba(245, 245, 248, 1) 60%,
+            rgba(245, 245, 248, 1) 80%,
+            rgba(158, 46, 246, 1) 80%
+        );
+        background: linear-gradient(
+            90deg,
+            rgba(158, 46, 246, 1) 0%,
+            rgba(158, 46, 246, 1) 15%,
+            rgba(158, 46, 246, 1) 60%,
+            rgba(245, 245, 248, 1) 60%,
+            rgba(245, 245, 248, 1) 80%,
+            rgba(158, 46, 246, 1) 80%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e2ef6",endColorstr="#9e2ef6",GradientType=1);
+    }
+
+    &__wrapper {
+        position: relative;
+        height: 100%;
+        &::before {
+            position: absolute;
+            content: "Radoconsult OU";
+            color: transparent;
+            font-size: 11.375em;
+            font-weight: bolder;
+            text-transform: uppercase;
+            white-space: nowrap;
+            opacity: 8%;
+            top: 150px;
+            right: 0;
+            max-width: 1100px;
+            stroke-color: #fff;
+        }
+        &::after {
+            position: absolute;
+            content: "Consulting agency";
+            color: transparent;
+            font-size: 11.375em;
+            font-weight: bolder;
+            text-transform: uppercase;
+            opacity: 8%;
+            bottom: -50px;
+            left: 0;
+            max-width: 1100px;
+            stroke-color: #fff;
+        }
+    }
+
+    &__column {
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        &:first-child {
+            height: 70px;
+        }
+        &:last-child {
+            padding-top: 160px;
+            align-items: flex-start;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 40px;
+            margin: 0;
+            li {
+                color: #fff;
+                > a {
+                    color: #a5a4a6;
+                    font-size: var(--fz14);
+                    position: relative;
+                    transition: linear 0.3s;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: -5px;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #9e2ef6;
+                        transition: linear 0.3s;
+                    }
+                    &:hover {
+                        color: #fff;
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__callmodal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40px;
+        > a {
+            color: #fff;
+            font-size: var(--fz14);
+            transition: linear .2s;
+            &:hover {
+                color: #9e2ef6;
+            }
+        }
+    }
+
+    &__lang {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        &-active {
+            position: relative;
+            color: #fff !important; 
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -5px;
+                left: 0;
+                background-color: #9e2ef6;
+                width: 50%;
+                height: 1px;
+            }
+        }
+        a {
+            color: #929093;
+            font-size: var(--fz14);
+        }
+        a:active,
+        a:focus,
+        a:hover {
+            color: #fff;
+        }
+    }
+    &__description {
+        color: #fff;
+        max-width: 468px;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 46px;
+        &::before {
+            position: absolute;
+            content: "01";
+            top: -65%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #1c101d;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 261px;
+            width: 100%;
+            height: 5px;
+            background-color: #9e2ef6;
+        }
+    }
+
+    &__subtitle {
+        padding-top: 55px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    &__btn {
+        padding-top: 80px;
+        button {
+            max-width: 224px;
+            width: 100%;
+            height: 70px;
+            color: #fff;
+            background-color: #9e2ef6;
+            font-size: var(--fz14);
+        }
+    }
+
+    &__hand {
+        img {
+            position: relative;
+            z-index: 88;
+            width: 100%;
+        }
+    }
+}
+
+

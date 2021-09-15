@@ -1,27 +1,257 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>New site</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    
+  </head>
 
-<body>
-  <div class="site-container">
-    @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
-  </div>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <body>
+    <div class="site-container">
+      @include('partials/header.html')
+      <section class="services">
+        <div class="container">
+          <div class="services__column">
+            <div class="services__title">Финансовые <br> и юридические услуги</div>
+            <div class="services__items">
+              <div class="services__item services__item-start">
+                <img src="../img/item-1.png" alt="" srcset="../img/item-1@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Привлечение
+                    инвестиций</h3>
+                  <span>Полная подготовка компании к привлечению
+                    инвестиций, увеличьте вероятность
+                    привлечения инвестиций минимум на 50%</span>
+                </div>
+              </div>
+              <div class="services__item services__item-end">
+                <img src="../img/item-2.png" alt="" srcset="../img/item-2@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Оценка</h3>
+                  <span>Отчеты об оценке стоимости бизнеса
+                    и активов, соответствующие российским
+                    и международным стандартам</span>
+                </div>
+              </div>
+              <div class="services__item services__item-start">
+                <img src="../img/item-3.png" alt="" srcset="../img/item-3@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Размещение
+                    капитала
+                  </h3>
+                  <span>Подбор наиболее привлекательных вариантов
+                    размещения капитала исходя из ваших
+                    возможностей и предпочтений
+                  </span>
+                </div>
+              </div>
+              <div class="services__item services__item-end">
+                <img src="../img/item-4.png" alt="" srcset="../img/item-4@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Аналитика</h3>
+                  <span>Исследование рынка даст возможность принять
+                    более эффективные управленческие решения,
+                    снизьте риски своих вложений
+                  </span>
+                </div>
+              </div>
+              <div class="services__item services__item-start">
+                <img src="../img/item-5.png" alt="" srcset="../img/item-5@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Финансовый
+                    менеджмент</h3>
+                  <span>Повысьте точность финансового планирования
+                    и сократите расходы минимум на 20%</span>
+                </div>
+              </div>
+              <div class="services__item services__item-end">
+                <img src="../img/item-6.png" alt="" srcset="../img/item-6@2x.png
+                  2x">
+                <div class="services__desc">
+                  <h3>Корпоративное
+                    право</h3>
+                  <span>Структурирование сделок по купле-продаже
+                    активов и Due Diligence (комплексная проверка)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__before">
+          <div class="container">
+            <div class="about__row">
+              <div class="about__column">
+                <div class="about__title">
+                  Пока другие
+                  едут — мы
+                  летим!
+                </div>
+                <div class="about__subtitle">
+                  Всегда на шаг впереди! Специалисты компании
+                  «RadoConsulting» готовы поработать над проектом любой
+                  сложности. В рамках сотрудничества мы всегда уделяем
+                  особое внимание видению клиента. Мы выявляем
+                  потребности бизнеса и предоставляем инструменты,
+                  необходимые для достижения поставленных целей.
+                </div>
+                <div class="about__counter">
+                  <div class="about__item">
+                    <div class="about__number about__number-1" data-max="10">0</div>
+                    <span>Лет на рынке</span>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__number about__number-2" data-max="200">100</div>
+                    <span>Довольных клиентов</span>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__number about__number-3" data-max="250">100</div>
+                    <span>Успешных проектов</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about__column">
+                <div class="about__img">
+                  <div class="left-plane wow"></div>
+                  <img class="wow element-animation" src="../img/fly.png" alt=""
+                    srcset="../img/fly@2x.png 2x">
+                  <div class="right-plane wow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dev">
+        <div class="dev__block">
+          <div class="container">
+            <div class="dev__column">
+              <div class="dev__title">
+                Программирование,
+                разработка сайтов
+                и веб-приложений
+              </div>
+              <div class="dev__items">
+                <div class="dev__item dev__item-start">
+                  <img src="../img/item-7.png" alt=""
+                    srcset="../img/item-7@2x.png 2x">
+                  <div class="dev__desc">
+                    <h3>Разработка
+                      с нуля
+                    </h3>
+                    <span>Составим техническое задание, разобъём
+                      проект на этапы, определим сроки
+                      и запрограммируем</span>
+                  </div>
+                </div>
+                <div class="dev__item dev__item-end">
+                  <img src="../img/item-8.png" alt=""
+                    srcset="../img/item-8@2x.png 2x">
+                  <div class="dev__desc">
+                    <h3>Аутсорс</h3>
+                    <span>Предоставляем веб-программистов
+                      на почасовой модели оплаты</span>
+                  </div>
+                </div>
+                <div class="dev__item dev__item-start">
+                  <img src="../img/item-9.png" alt=""
+                    srcset="../img/item-9@2x.png 2x">
+                  <div class="dev__desc">
+                    <h3>Доработка
+                      и поддержка</h3>
+                    <span>Допишем API, адаптируем вёрстку, прикрутим
+                      административную панель, интегрируем
+                      сторонние сервисы и платёжные системы
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__row">
+            <div class="contacts__column">
+              <div class="contacts__title">
+                Контакты
+              </div>
+              <div class="contacts__office">
+                <span>офис</span>
+                <p>Valukoja tn 8/1-110, 11415, Tallin, Estonia</p>
+              </div>
+              <div class="contacts__phone">
+                <span>телефон</span>
+                <a href="tel:+7 495 790 37 31">+7 495 790 37 31</a>
+              </div>
+              <div class="contacts__mail">
+                <span>email</span>
+                <a href="mailto:radoconsult@mail.ru">radoconsult@mail.ru</a>
+              </div>
+            </div>
+            <div class="contacts__column">
+              <form action="" class="contacts__form">
+                <div class="contacts__column">
+                  <div class="contacts__label">
+                    Онлайн запись
+                  </div>
+                  <div class="contacts__inputname">
+                    <input type="text" name="" id="" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="contacts__inputphone">
+                    <input type="tel" name="" id="" placeholder="Ваш телефон" required>
+                  </div>
+                  <div class="contacts__inputmail">
+                    <input type="email" name="" id="" placeholder="Ваш email" required>
+                  </div>
+                  <div class="contacts__inputarea">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                  </div>
+                  <div class="contacts__submit">
+                    <button type="submit">Отправить</button>
+                    <span>Отправляя форму, Вы даете
+                      согласие на обработку
+                      <a href="">персональных данных</a></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16238.21510666292!2d24.78728983823635!3d59.42011661078212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb571f124501%3A0xebda3ba0dcc08b3b!2zVmFsdWtvamEgOCwgMTE0MTUgVGFsbGlubiwg0K3RgdGC0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1628972642437!5m2!1sru!2sru"
+          width="100%" height="700" style="border:0;" allowfullscreen=""
+          loading="lazy"></iframe>
+      </section>
+      @include('partials/footer.html')
+      <!-- @include('html/h1.html') пример инклуда -->
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 
 </html>

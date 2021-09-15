@@ -1,14 +1,1 @@
-"use strict";
-
-console.log('global');
-"use strict";
-
-console.log('maxgraph');
-/**
-  * название функции
-  *
-  * @param {number} first - первое число
-  * @returns {number}
-  */
-"use strict";
-//# sourceMappingURL=main.js.map
+"use strict";console.log("global");var number=document.querySelector(".about__number-1"),numberTop=number.getBoundingClientRect().top,start=+number.innerHTML,end=+number.dataset.max;window.addEventListener("scroll",(function e(){if(window.pageYOffset>numberTop-window.innerHeight/2){this.removeEventListener("scroll",e);var n=setInterval((function(){number.innerHTML=++start,start==end&&clearInterval(n)}),50)}}));var number1=document.querySelector(".about__number-2"),number1Top=number1.getBoundingClientRect().top,start1=+number1.innerHTML,end1=+number1.dataset.max;window.addEventListener("scroll",(function e(){if(window.pageYOffset>number1Top-window.innerHeight/2){this.removeEventListener("scroll",e);var n=setInterval((function(){number1.innerHTML=++start1,start1==end1&&clearInterval(n)}),7)}}));var number2=document.querySelector(".about__number-3"),number2Top=number2.getBoundingClientRect().top,start2=+number2.innerHTML,end2=+number2.dataset.max;window.addEventListener("scroll",(function e(){if(window.pageYOffset>number2Top-window.innerHeight/2){this.removeEventListener("scroll",e);var n=setInterval((function(){number2.innerHTML=++start2,start2==end2&&clearInterval(n)}),5)}}));var burger=document.querySelector(".burger");burger.addEventListener("click",(function(e){e.currentTarget.classList.toggle("burger--active")}));var burgerBtn=document.getElementById("burgerBtn"),mobile=document.getElementById("mobile"),demo3=document.getElementById("demo3");burgerBtn.addEventListener("click",(function(){mobile.classList.toggle("navigation"),document.body.classList.toggle("navigation")}),!1);

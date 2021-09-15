@@ -1,0 +1,108 @@
+.footer {
+    background-color: #110515;
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding: 60px 0;
+        gap: 50px;
+        &:last-child {
+            justify-content: space-between;
+            align-items: center;    
+            padding: 30px 0;
+            border-top: 1px solid #2c1d2e;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        gap: 14px;
+        &:last-child {
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    &__text {
+        font-size: var(--fz12);
+        font-weight: 300;
+        color: #fff;
+        span {
+            color: #a5a4a6;
+        }
+    }
+
+    &__text-white {
+        color: #fff;
+    }
+
+    &__text-size {
+        font-size: var(--fz13);
+        font-weight: 700;
+    }
+
+    &__callmodal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40px;
+        > a {
+            color: #fff;
+            font-size: var(--fz14);
+            &:last-child {
+                color: #9e2ef6;
+            }
+        }
+    }
+
+    &__lang {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        &-active {
+            position: relative;
+            color: #fff !important; 
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -5px;
+                left: 0;
+                background-color: #9e2ef6;
+                width: 50%;
+                height: 1px;
+            }
+        }
+        a {
+            color: #929093;
+            font-size: var(--fz14);
+        }
+        a:active,
+        a:focus,
+        a:hover {
+            color: #fff;
+        }
+    }
+
+    &__copyright {
+        font-size: var(--fz12);
+        font-weight: 300;
+        color: #a5a4a6;
+        img {
+            vertical-align: middle;
+            padding-right: 12px;
+        }
+    }
+
+    &__policy {
+        a {
+            color: #9e2ef6;
+            font-size: var(--fz12);
+        font-weight: 300;
+        }
+    }
+}
